@@ -232,7 +232,7 @@ resource "aws_codepipeline" "codepipeline" {
       output_artifacts = ["tf-code"]
 
       configuration = {
-        ConnectionArn    = "arn:aws:codestar-connections:us-west-1:596780849713:connection/c08c265e-921b-4a9c-a8dc-39b700f7e6a5"
+        ConnectionArn    = "arn:aws:codestar-connections:us-west-1:596780849713:connection/00aac996-7fc9-4527-a25d-444f0f95c4ff"
         FullRepositoryId = "si3mshady/codepipeline_practice_saturday"
         BranchName       = "master"
         OutputArtifactFormat = "CODE_ZIP"
