@@ -131,7 +131,7 @@ resource "aws_iam_policy" "cp_policy" {
 
 
 resource "aws_iam_policy_attachment" "cp-policy-attach" {
-  name       = "policy-attach"
+  name       = "policy-attach-cp"
   roles      = [aws_iam_role.cp_service_role.name]
   policy_arn = aws_iam_policy.cp_policy.arn
 }
@@ -140,7 +140,7 @@ resource "aws_iam_policy_attachment" "cp-policy-attach" {
 
 
 resource "aws_iam_policy_attachment" "policy-attach" {
-  name       = "policy-attach"
+  name       = "policy-attach-cb"
   roles      = [aws_iam_role.cb_service_role.name]
   policy_arn = aws_iam_policy.policy.arn
 }
