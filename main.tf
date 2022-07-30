@@ -1,9 +1,9 @@
 module "cicd" {
   source = "./cicd"
-   username =  var.username
-   password = var.password
-   appID = var.appID
-   connectionArn = var.connectionArn
+#    username =  var.username
+#    password = var.password
+#    appID = var.appID
+#    connectionArn = var.connectionArn
    s3_bucket = module.s3.s3_bucket
    s3_artifacts = module.s3.s3_artifacts
    
@@ -37,7 +37,7 @@ provider "aws" {
 terraform {
 
     backend "s3" {
-      bucket = "cicd-si3mshady"
+      bucket = "cicd-si3mshady-2"
       encrypt = true
       key = "terraform.tfstate"
       region = "us-west-1"

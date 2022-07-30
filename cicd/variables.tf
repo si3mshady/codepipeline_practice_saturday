@@ -1,19 +1,19 @@
-variable "username" {
-    type = string
-}
+# variable "username" {
+#     type = string
+# }
 
-variable "password" {
-     type = string
-}
+# variable "password" {
+#      type = string
+# }
 
-variable "appID" {
-     type = string
-}
+# variable "appID" {
+#      type = string
+# }
 
 
-variable "connectionArn" {
-     type = string
-}
+# variable "connectionArn" {
+#      type = string
+# }
 
 
 

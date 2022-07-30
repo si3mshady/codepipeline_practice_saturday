@@ -24,20 +24,20 @@
 # }
 
 
-resource "aws_ssm_parameter" "params" {
+# resource "aws_ssm_parameter" "params" {
 
-  for_each = {
-    username = var.username
-    # password = var.password
-    # connectionArn = var.connectionArn
-    appID = var.appID
-  }
+#   for_each = {
+#     username = var.username
+#     # password = var.password
+#     # connectionArn = var.connectionArn
+#     appID = var.appID
+#   }
 
-  name  = each.value
-  type  = "String"
-  value = each.value
+#   name  = each.value
+#   type  = "String"
+#   value = each.value
 
-}
+# }
 
 
 
