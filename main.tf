@@ -34,20 +34,20 @@ provider "aws" {
 #   value = module.iam.codepipeline-iam-arn
 # }
 
-terraform {
+# terraform {
 
-    backend "s3" {
-      bucket = "cicd-si3mshady-2"
-      encrypt = true
-      key = "terraform.tfstate"
-      region = "us-west-1"
-    }
+#     # backend "s3" {
+#     #   bucket = "cicd-si3mshady-2"
+#     #   encrypt = true
+#     #   key = "terraform.tfstate"
+#     #   region = "us-west-1"
+#     # }
 
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
+#   required_providers {
+#     aws = {
+#       source  = "hashicorp/aws"
       
-    }
-  }
-}
+#     }
+#   }
+# }
 
