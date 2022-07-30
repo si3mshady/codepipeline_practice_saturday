@@ -1,0 +1,26 @@
+version: 0.2
+
+
+phases:
+
+  pre_build:
+    commands:
+      - terraform init 
+      - terraform validate
+      
+
+  build:
+    commands:
+      - terraform plan 
+     
+  
+
+
+
+
+#     sudo apt update
+# sudo apt install software-properties-common
+# sudo add-apt-repository ppa:deadsnakes/ppa
+# sudo apt install python3.7
+# sudo apt install python3-pip
+# sudo python3.7 -m pip install -U checkov #to install or upgrade checkov)
