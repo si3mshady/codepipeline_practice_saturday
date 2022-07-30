@@ -250,7 +250,7 @@ resource "aws_codepipeline" "codepipeline" {
             owner = "AWS"
             input_artifacts = ["tf-code"]
             configuration = {
-                ProjectName = "saturday-cicd"
+                ProjectName = "1"
             }
         }
     }
@@ -269,7 +269,7 @@ resource "aws_codepipeline" "codepipeline" {
       version         = "1"
 
       configuration = {
-        ProjectName = "cicd-saturday"
+        ProjectName = "2"
       }
     }
   }
