@@ -241,7 +241,7 @@ resource "aws_codepipeline" "codepipeline" {
   }
 
   stage {
-        name ="Plan"
+        name ="Build"
         action{
             name = "Build"
             category = "Build"
@@ -250,7 +250,7 @@ resource "aws_codepipeline" "codepipeline" {
             owner = "AWS"
             input_artifacts = ["tf-code"]
             configuration = {
-                ProjectName = "plan"
+                ProjectName = "build"
             }
         }
     }
